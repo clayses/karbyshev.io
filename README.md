@@ -1,2 +1,0 @@
-# karbyshev.io
-first project
