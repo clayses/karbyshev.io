@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="uk">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Corporate website — Karbyshev Digital Agency (exam project).">
+<title>Karbyshev Digital Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Karbyshev Digital Agency</h1>
+          <span>Web • Design • Growth</span>
+        </div>
+      </a>
+      <div class="navlinks">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<main class="section">
+  <div class="container">
+    <div class="card pad">
+      <h2 class="h2">Contact</h2>
+      <p class="lead">
+        Заповніть форму — сайт відкриє поштовий клієнт через <b>mailto</b> (працює після того, як ви вставите свою корпоративну пошту на Home).
+      </p>
+
+      <div class="hr"></div>
+
+      <div class="grid-2">
+        <div class="tile">
+          <h3>Contact details</h3>
+          <p class="lead" style="margin:0;">
+            Email: <b>(вставте на Home)</b><br>
+            Location: Ukraine (demo)<br>
+            Working hours: 10:00–18:00 (demo)
+          </p>
+          <div class="hr"></div>
+          <div class="notice" id="formNote">
+            Порада: на Home змініть <b>___@___</b> на вашу корпоративну пошту — тоді цей контакт‑формат буде повністю працездатний.
+          </div>
+        </div>
+
+        <div class="tile">
+          <h3>Request form</h3>
+          <form class="form" id="contactForm">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Ваше ім’я" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="name@example.com" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Коротко опишіть задачу" required></textarea>
+            </div>
+            <button class="btn" type="submit">Send (mailto)</button>
+          </form>
+          <small>Це демо‑реалізація без бекенду (що нормально для екзаменаційної роботи).</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <b style="color:var(--text); font-size:14px;">Karbyshev Digital Agency</b>
+        <small>Corporate website created for the exam in “Web Programming & Web Design”.</small>
+        <small>© <span id="y"></span> All rights reserved.</small>
+      </div>
+      <div>
+        <small><b style="color:var(--text);">Quick links</b></small>
+        <small><a href="services.html">Services</a> • <a href="contact.html">Contact</a> • <a href="about.html">About</a></small>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="to-top" aria-label="Scroll to top">
+  <button type="button" data-to-top>↑</button>
+</div>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
