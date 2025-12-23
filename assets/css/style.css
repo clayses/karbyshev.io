@@ -263,3 +263,9 @@ textarea{min-height: 132px; resize: vertical}
   .grid-2{grid-template-columns: 1fr}
   .hero h2{font-size:34px}
 }
+.about-banner img{
+  width: 100%;
+  height: 300px; /* можеш 260–320 */
+  object-fit: cover;
+  display: block;
+}
